@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -d "/custom_config" ]]
+if [[ -d "/custom_config" ]] && [[ "${DEV_ENV:-false}" != "true" ]]
 then
     echo "/custom_config exists on your filesystem."
     rm /usr/share/logstash/pipeline/logstash.conf

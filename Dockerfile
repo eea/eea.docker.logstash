@@ -1,4 +1,4 @@
-FROM logstash:7.12.1
+FROM logstash:7.16.1
 
 ADD ./docker_start.sh /
 
